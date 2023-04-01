@@ -1,4 +1,4 @@
-//PROGRAMA 5 YARA ALINE GUZMÁN GARCÍA 0909-22-1792
+De//PROGRAMA 5 YARA ALINE GUZMÁN GARCÍA 0909-22-1792
 
 #include <iostream>
 #include <conio.h>
@@ -7,7 +7,7 @@ using namespace std;
 
 int main(){
 	string frutas[9] = { "fresa", "sandia", "melon", "fresa", "naranja", "melon", "mango", "naranja", "fresa" }; 
-	int d,contador[4] = { 0, 0, 0, 0 }; 
+	int d,contador[5] = { 0, 0, 0, 0 }; 
 
 	for (d = 0; d < 9; d++) { 
 		if (frutas[d] == "fresa") { 
@@ -22,6 +22,9 @@ int main(){
 		else if (frutas[d] == "naranja") { 
 			contador[3]++;
 	    }
+                 else if (frutas[d] == "mango") { 
+			contador[4]++;
+	    }
 		
 	}
 
@@ -30,6 +33,7 @@ int main(){
 	cout << "Sandias: " << contador[1] << endl; 
 	cout << "Melones: " << contador[2] << endl; 
 	cout << "Naranjas: " << contador[3] << endl; 
+	cout << "Mango: " << contador[4] << endl;
 	
-	return 0;
+return 0;
 }
